@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web con Bootstrap</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+    <div class="container mt-5">
+    <h1>cambios en el repositorio</h1>
+        <h2>Formulario de contacto</h2>
+        <form action="guardar_datos.php" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombrffffffe:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+		function Video({ video }) {
+			  return (
+  			 	 <div>
+   			  	 <Thumbnail video={video} />
+   			 	 <a href={video.url}>
+    			   	 <h3>{video.title}</h3>
+       			 	<p>{video.description}</p>
+     			 	</a>
+     				 <LikeButton video={video} />
+    				</div>
+ 				 );
+			}
+
+
+import React from 'react';
+import { Player } from 'video-react';
+
+export default props => {
+  return (
+    <Player
+      playsInline
+      poster="/assets/poster.png"
+      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+    />
+  );
+};
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
